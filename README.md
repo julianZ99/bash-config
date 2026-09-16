@@ -24,7 +24,13 @@ Since this is my personal config, feel free to adapt it to your own needs.
 
 ## Install
 
-From the repo root:
+Straight from GitHub:
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/julianZ99/bash-config/main/install.sh)
+```
+
+Or from the repo root:
 
 ```bash
 ./install.sh
