@@ -1,0 +1,14 @@
+# ~/.inputrc
+$include /etc/inputrc
+
+set show-all-if-ambiguous on
+set menu-complete-display-prefix on
+set completion-ignore-case on
+set colored-stats on
+set completion-query-items 0
+
+# Tab: cycle forward
+"\t": menu-complete
+
+# Shift-Tab: cycle backward
+"\e[Z": menu-complete-backward

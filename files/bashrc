@@ -1,0 +1,14 @@
+# ~/.bashrc
+
+# Exit if not running interactively.
+[[ $- == *i* ]] || return
+
+# Load user-specific Bash configuration.
+if [[ -d "$HOME/.bashrc.d" ]]; then
+    for rc in "$HOME/.bashrc.d/"*.sh; do
+        [[ -f "$rc" ]] || continue
+        source "$rc"
+    done
+fi
+
+unset rc
